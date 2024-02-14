@@ -1,0 +1,119 @@
+body{
+    background-color: floralwhite;
+    margin: 0;
+    padding: 0;
+}
+
+.hed{
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, sans-serif; 
+    /*The early 2010s called me, they said Times New Roman is better -- hahaha */
+}
+
+
+.parent-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.card_1{
+    margin: 5px 10px;
+    flex: 1 0 calc(22% - 20px); 
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-top: solid 10px;
+    border-color: orangered;
+    max-width: 35%;
+}
+
+.card_2{
+    margin: 5px 10px; 
+    flex: 1 0 calc(22% - 20px);
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-top: solid 10px;
+    border-color: orangered;
+    max-width: 35%;
+}
+.card_1:hover{
+    box-shadow: 0 28px 16px 0 rgba(0,0,0,0.2);
+}
+.card_2:hover{
+    box-shadow: 0 28px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_1 h1{
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+.card_1 h2{
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.card_2 h1{
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.card_2 h2{
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* My attempt at Media Query */
+@media only screen and (max-width: 600px)
+ {
+     body{
+        text-align: center;
+     }
+     .parent-container {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+    }
+    .card_1{
+        flex: 1 0 100%; 
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+    .card_2{
+        flex: 1 0 100%; 
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

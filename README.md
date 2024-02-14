@@ -1,2 +1,2 @@
-# coding_the_news_hw2
- homework #2 for coding the news.
+# HW_2_coding_the_news
+ Homework #2 for coding the news
